@@ -11,13 +11,15 @@
     <?php
         //Generate a Company Table
 
+        $companyNames = ["Company", "Adress", "Email", "Number"];
+
         echo "<table id=\"company\">";
 
         echo "<tr>";
         
-        for ($titles=1; $titles<5; $titles++){
+        for ($titles=0; $titles<4; $titles++){
 
-            echo "<th>Title $titles </th>";
+            echo "<th> $companyNames[$titles] </th>";
         }
 
         echo "</tr>";
